@@ -1,3 +1,4 @@
+/*color variables*/
 :root {
 --first: #737879;
 --second: #20a2bb;
@@ -5,18 +6,21 @@
 
 }
 
-* {
+/*removes styling*/
+* { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*body styling*/
 body {
     font-family: 'Times New Roman', Times, serif;
     color: var(--third);
     background-color: var(--first);
 }
 
+/*header styling*/
 header {
     background-color: var(--first);
     display: flex;
@@ -31,7 +35,7 @@ header div {
 
 header h1 {
     color: var(--second);
-    font-size: 20px;
+    font-size: 40px;
     font-weight: bold;
     background-color: var(--first);
     border: 5px solid var(--third);
@@ -44,14 +48,16 @@ margin: 10px;
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     list-style: none;
 }
 
 header nav ul li a {
-    font-size: 25px;
-    margin: 10px 10px 0px 0px ;
+    font-size: 30px;
+    margin: 10px 15px 0px 0px ;
     font-weight: bold;
+    color: var(--third);
 }
 
 header nav ul li a:hover {
@@ -59,9 +65,11 @@ header nav ul li a:hover {
     color: var(--third);
     border-radius: 15px;
 }
+/*header styling end*/
 
+/*hero styling*/
 .hero {
-    background-image: url("assets/images/background.jpg");
+    background-image: url("../images/background.jpg");
     height: 600px;
     background-size: cover;
     background-position: center;
@@ -72,4 +80,256 @@ header nav ul li a:hover {
 
 .hero img {
     height: 400px;
+}
+
+.subtitle {
+    font-size: 30px;
+    display: flex;
+    justify-content: end;
+    text-align: right;
+    color: rgb(200, 193, 193);
+
+}
+
+.subtitle .span-background{
+font-size: 35px;
+}
+/*hero styling end*/
+
+/*title styling*/
+.title {
+    border-right: 5px solid var(--second);
+    min-height: 100%;
+    text-align: right;
+    padding-right: 40px;
+    min-width: 20%;
+    max-width: 20%;
+}
+
+.title h2 {
+    font-size: 48px;
+}
+/*title styling end*/
+
+/*about me styling*/
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-top: 30px;
+}
+
+.about-me p {
+    font-size: 35px;
+    padding: 0px 35px;
+    line-height: 100%;
+    width: auto;
+}
+/*about me styling end*/
+
+/*my work styling*/
+.my-work {
+    padding: 25px 0px;
+    display: flex;
+    justify-content: space-between;
+    line-height: normal;
+}
+
+.my-work h2 {
+    color: var(--third);
+}
+
+.projects {
+    width: 80%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    }
+
+.projects:hover {
+    opacity: 1.0;
+}
+
+.project-label {
+    background-color: var(--first);
+    color: var(--third);
+    padding: 10px;
+}
+
+
+.horiseon-refactor {
+    background-image:url("../images/horiseonrefactor.png");
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    color: var(--third) solid;
+    border: black 5px solid;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.horiseon-refactor:hover {
+    opacity: 75%;
+}
+
+.project2 {
+    background-image: url("../images/Placeholder.png");
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    color: var(--third);
+    background-color: var(--first);
+}
+
+.project2:hover {
+    opacity: 75%;
+}
+
+.project3 {
+    background-image: url("../images/Placeholder.png");
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    color: var(--third);
+}
+
+.project3:hover {
+    opacity: 75%;
+}
+
+.project4 {
+    background-image: url("../images/Placeholder.png");
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    color: var(--third);
+}
+
+.project4:hover {
+    opacity: 75%;
+}
+
+.project5 {
+    background-image: url("../images/Placeholder.png");
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    color: var(--third);
+}
+
+.project5:hover {
+    opacity: 75%;
+}
+/*my work styling end*/
+
+/*footer styling*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom:30px;
+    margin-top: 30px;
+}
+
+#contact-list {
+    width: 100%;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+footer ul li {
+    font-weight: bold;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: var(--second);
+    padding: 5px;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    background: var(--second);
+    color: var(--third);
+    border-radius: 10px;
+}
+/*footer styling end*/
+
+/*media for mobile phones*/
+@media screen and (max-width: 768px) {
+    .subtitle {
+        font-size: 30px;
+        padding-right: 15px;
+    }
+}
+
+.title h2 {
+    font-size: 30px;
+}
+
+.about-me p {
+    font-size: 16px;
+    padding: 0px 15px;
+    line-height: normal;
+}
+
+/*media for desktops*/
+@media screen and (max-width: 575px) {
+    header {
+        justify-content: center;
+        padding: 20px;
+    }
+
+    header nav ul {
+        min-height: 80px;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .title {
+        border-bottom: 5px solid var(--first);
+        border-right: none;
+        text-align: center;
+        min-height: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .about-me p {
+        font-size: 15px;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .my-work {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+
+    footer ul li {
+        padding: 10px;
+        text-align: center;
+    }
 }
