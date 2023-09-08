@@ -109,7 +109,7 @@ header nav ul li a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: lightcoral;
+    color: darkkhaki;
     margin-top: -70px;
     border: 5px solid ;
     
@@ -125,10 +125,10 @@ font-size: 35px;
 .title {
     border-right: 5px solid var(--second);
     min-height: 100%;
-    text-align: left;
+    text-align: center;
     padding-right: 40px;
     min-width: auto;
-    max-width: auto;
+    max-width: 20%;
 }
 
 .title h2 {
@@ -281,6 +281,7 @@ footer {
 text-align: center;
 font-size: 36px;
 margin-left: 20px;
+
 }
 
 footer ul {
@@ -300,7 +301,7 @@ footer ul li {
 
 footer ul li a {
     text-decoration: none;
-    color: #333;
+    color: darkkhaki;
     padding: 5px;
     font-weight: bold;
     font-size: 18px;
